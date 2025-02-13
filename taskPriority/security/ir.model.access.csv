@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_priority_pattern,access_priority_pattern,model_priority_pattern,base.group_user,1,1,1,1
+access_priority_complexity,access_priority_complexity,model_priority_complexity,base.group_user,1,1,1,1
+access_priority_importance,access_priority_importance,model_priority_importance,base.group_user,1,1,1,1

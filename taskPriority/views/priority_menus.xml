@@ -1,0 +1,4 @@
+<odoo>
+    <menuitem id="project_config_importance_menu_action" name="Importance" parent="project.menu_project_config" action="project_importance_settings_action"/>
+    <menuitem id="project_config_complexity_menu_action" name="Complexity" parent="project.menu_project_config" action="project_complexity_settings_action"/>
+</odoo>

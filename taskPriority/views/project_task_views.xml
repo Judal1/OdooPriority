@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="project_task_kanban_inherit" model="ir.ui.view">
+        <field name="name">project.task.kanban.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_kanban"/>  <!-- Référence à la vue kanban existante -->
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_ids']" position="after">
+                <field name="importance_id" widget="badge" decoration-success="true"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="project_task_form_inherit" model="ir.ui.view">
+        <field name="name">project.task.form.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_ids']" position="after">
+                <field name="importance_id"/>
+                <field name="complexity_id" widget="radio" options="{'horizontal': 1}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
