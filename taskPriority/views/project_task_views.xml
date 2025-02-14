@@ -7,6 +7,12 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='user_ids']" position="after">
                 <field name="importance_id" widget="badge" decoration-success="true"/>
+                <field name="complexity_color"/>
+            </xpath>
+            <xpath expr="//field[@name='importance_id']" position="attributes">
+                <attribute name="decoration-info">complexity_color == '10'</attribute>
+                <attribute name="decoration-warning">complexity_color == '2'</attribute>
+                <attribute name="decoration-danger">complexity_color == '3'</attribute>
             </xpath>
         </field>
     </record>
