@@ -9,4 +9,3 @@ class Complexity(models.Model):
     _sql_constraints = [
         ('check_complexity_name_unique', 'UNIQUE (name)', 'Complexity title must be unique')
     ]
-    _rec_name = 'color'

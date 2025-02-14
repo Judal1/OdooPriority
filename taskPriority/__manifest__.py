@@ -19,5 +19,11 @@
     'demo': [
 
     ],
+    'assets': {
+        'web.assets_backend': [
+            'taskPriority/static/src/**/*',
+        ],
+    },
+
     'application': False,
 }
